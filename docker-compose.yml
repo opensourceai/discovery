@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  discovery:
+    container_name: tuboshu-discovery
+    image: discovery
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 7171:7171
+

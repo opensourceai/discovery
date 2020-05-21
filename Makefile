@@ -1,5 +1,5 @@
 # Go parameters
-GOCMD=GO111MODULE=on CGO_ENABLED=0 go
+GOCMD=GO111MODULE=on CGO_ENABLED=0 GOPROXY=https://goproxy.io go
 GOBUILD=$(GOCMD) build
 GOTEST=$(GOCMD) test
 
